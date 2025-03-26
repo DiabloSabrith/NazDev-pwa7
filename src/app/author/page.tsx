@@ -17,7 +17,7 @@ export default function Intensivs() {
 
         <main className="w-[95%] h-410  mx-auto flex flex-col items-center text-center my-10">
 
-            <section className="w-[90%] h-550  rounded-3xl sprintBlock">
+            <section className="w-[90%] h-550  rounded-3xl sprintBlock fideInAnim ">
 
                 <div className="w-[90%] h-250 mx-auto flex flex-row gap-10 flex-wrap  justify-center   pt-10">
                     <div className="w-[100%] h-100  rounded-[10px] authorBlock flex flex-row items-center justify-center gap-7">
