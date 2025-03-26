@@ -205,12 +205,191 @@ animation: BetaAnim 1.5s linear infinite;
     .mainItem{
       width: 90%;
       height: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      img{
+        padding-bottom: 0;
+        margin-left: 20px;
+      }
     }
   }
-  
 }
 
+/* TODO */
+
+.containerSprint{
+  width: 100%;
+  height: auto;
+  .mobileBM{
+    margin-bottom: 20px;
+  }
+  .h1{
+    display: none;
+  }
+  h1{
+    font-size: 10vw;
+    line-height:12vw;
+    padding-bottom: 10px;
+  }
+  .sprintBlock{
+    width: 100%;
+    height: auto;
+  }
+  .sprintBlockItem {
+    width: 100%;
+    height: 35%;
+    h3{
+      font-size: 8vw;
+      padding-top: 10px;
+    }
+  }
 }
+.headerSprint{ 
+  margin-top: 20px;   
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul{
+    gap: 2vw;
+  }
+  li{
+  font-size: 3vw;
+}
+}
+.logoTitle{
+  display: none;
+}
+p{
+  padding-top: 10px;
+  font-size: 4vw;
+  padding: 0 20px;
+  line-height: 7vw;
+}
+/* TODO */
+
+.containerIntensiv{
+  width: 100%;
+  height: auto;
+
+  .intensivBlock{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    .intensivItem {
+      width: 90%;
+      height: 35%;
+      .btn{
+        margin: 20px 0;
+      }
+      h3{
+        font-size: 6vw;
+        padding-top: 20px;
+      }
+      p{
+        
+        font-size: 4vw;
+        padding: 10px 20px;
+        line-height: 7vw;
+      }
+    }
+  }
+  .h1{
+  display: none;
+ }
+ h1{
+  font-size: 10vw;
+  line-height:12vw;
+  padding-bottom: 10px;
+}
+p{
+  padding-top: 10px;
+font-size: 4vw;
+padding: 0 20px;
+line-height: 6vw;
+
+}
+}
+.headerIntensiv{
+  margin-top: 20px;   
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul{
+    gap: 2vw;
+  }
+  li{
+  font-size: 3vw;
+  }
+  /* TODO */
+}
+.containerAuth{
+  width: 100%;
+  height: auto;
+  .red{
+    height: 100%;
+    background-color: transparent;
+  }
+  .cursBlock{
+    display: none;
+  }
+  .sprintBlock{
+    width: 100%;
+    height: auto;
+  box-shadow: none;
+  background-color:none;
+box-shadow: none;
+  }
+  .authInfoTwo{
+    background-color: rgb(138, 43, 226,0.1);
+    box-shadow: 2px 1px 10px rgb(138, 43, 226,0.6);
+    width: 100%;
+    height: auto;
+    p{
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
+  }
+  .authInfo{
+    width: 100%;
+    height: auto;
+    background-color: transparent ;
+    display: flex;
+    flex-direction: column;
+    .authText{
+      height: auto;
+      width: 100%;
+      padding: 10px 25px;
+      p{
+        text-align:center;
+      }
+    }
+    h3{
+      padding-top:10px;
+      font-size: 9vw;
+    }
+    p{
+      padding: 0;
+      margin: 0;
+      font-size: 4vw;
+      line-height: 7vw;
+    }
+  }
+  .headerAuth{
+    display:none;
+  }
+}
+}
+
 @keyframes BetaAnim {
   0% {
     font-size: 22px;
