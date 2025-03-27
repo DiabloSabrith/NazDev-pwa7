@@ -49,6 +49,9 @@ body {
   background-color: rgb(138, 43, 226,0.1);
   box-shadow: 2px 1px 10px rgb(138, 43, 226,0.6);
 }
+.drawer{
+  display: none;
+}
 .mainItem{
   background-color: rgb(138, 43, 226,0.1);
   box-shadow: 2px 1px 10px rgb(138, 43, 226,0.6);
@@ -163,6 +166,7 @@ animation: BetaAnim 1.5s linear infinite;
 
     font-size: 3vw;
   }
+  display: none;
   }
   .logoTitle{
     display: none;

@@ -1,6 +1,9 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link"
 import 'animate.css';
+import Drawer from "./components/drawer/drawer.js"
 export default function Home() {
   return (
 <div className="  container w-340 h-500 mx-auto  flex  flex-col">
@@ -13,8 +16,10 @@ export default function Home() {
              <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-125-adaptiv.vercel.app/support"> Поддержка</Link></li>
              <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-129-adaptiv.vercel.app/">Бесплатные курсы</Link></li>
              <li className="transition hover:text-[blueviolet]"><Link href='/author'>О нас</Link></li>
+           
           </ul>
     </header>
+    <Drawer /> 
 
     <main className="w-[95%] h-510  mx-auto flex flex-col items-center text-center ">
     {/* Надо обернуть в section */}
