@@ -12,7 +12,7 @@ const DrawerItem= () => {
     setOpen(false);
   };
   const MyCustomCloseIcon = () => (
-    <CloseOutlined style={{ color: 'white' }} />
+    <CloseOutlined style={{ color: '#ee204d' }} />
   );
   return (
     <div className={styles.drawer} >
@@ -24,7 +24,7 @@ const DrawerItem= () => {
    
       <Drawer 
       style={{backgroundColor:'#0c0a18'}}
-        title= <p style={{color:'#fff',letterSpacing:3,fontSize:22}}>Меню</p> 
+        title= <p style={{color:'#fff',letterSpacing:3,fontSize:24}}>Меню</p> 
         onClose={onClose} 
         open={open}
         closeIcon={<MyCustomCloseIcon />} 
@@ -37,8 +37,10 @@ const DrawerItem= () => {
                    <div className={styles.item} ><Link className={styles.a} href="https://naz-dev-129-adaptiv.vercel.app/">Бесплатные курсы</Link></div>
                    <div className={styles.item} ><Link className={styles.a} href='/author'>О нас</Link></div>
                    <div className={styles.item} ><Link className={styles.a} href='#'>Наше сообщество</Link></div>
-              </div>
 
+                  <p className={styles.text}>Возраст не важен, важен код! Покажи миру свои возможности  <br/> <span className={styles.span}>(проект создал 17-летним разработчиком)</span></p>
+              </div>
+              
 
      
       </Drawer>
