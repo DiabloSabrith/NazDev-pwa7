@@ -4,7 +4,7 @@
 }
 .btn{
     margin-top: 5vw;
-left: 100%;
+   left:20px;
     width: 30%;
     background-image: linear-gradient(
   to right,
@@ -17,11 +17,10 @@ border: none;
 color: #fff;
 box-shadow: 0 10px 25px 0 rgba(49, 196, 190, 0.75);
 }
-.drawerModal{
-    background-color: red;
-}
 .a{
-    color:  #30dd8a;
+    color:  blueviolet;
+    text-align: center;
+    font-size: 22px;
 }
 @media(min-width:320px) and (max-width:475px){
     .drawer{

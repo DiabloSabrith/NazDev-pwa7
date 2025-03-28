@@ -24,7 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <head>
+         <link rel="manifest" href="/manifest.json"/>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

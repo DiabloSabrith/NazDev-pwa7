@@ -40,21 +40,20 @@ export default function Home() {
                 
          <div className="w-[25%] h-[80%]  priceItem flex infoItem flex-col items-center justify-center rounded-[10px] transition transform hover:scale-[1.05]">
           <h3 className="pb-10 text-[#fff] text-4xl animate__animated animate__fadeIn">NazDev <br/> Sprint</h3>
-          <button className="btn  ">Записаться</button>
-          <span className="text-yellow-300 font-medium text-[20px] pt-5">от 799 руб</span>
+          <button className="btn  ">Подробнее</button>
+         
          </div>
     
          <div className="w-[25%] h-[80%]  priceItem flex  flex-col  infoItem items-center justify-center rounded-[10px] transition transform hover:scale-[1.05]">
          <h3 className="pb-10 text-[#fff] text-4xl animate__animated animate__fadeIn">NazDev <br/> Интенсив</h3>
-         <button className="btn   ">Записаться</button>
-         <span className="text-red-600 font-medium text-[20px] pt-5">от 990 руб</span>
+         <button className="btn   ">Подробнее</button>
          </div>
 
          <div className="w-[25%] h-[80%]  priceItem flex infoItem flex-col items-center justify-center rounded-[10px] transition transform hover:scale-[1.05]">
          <h3 className="pb-10 text-[#fff] text-4xl animate__animated animate__fadeIn">NazDev <br/> Бесплатные</h3>
         
          <button className="btn  "><Link href='https://naz-dev-129-adaptiv.vercel.app/'>Начать</Link></button>
-         <span className="text-yellow-300 font-medium text-[20px] pt-5">Free</span>
+    
          </div>
             </section>
 
