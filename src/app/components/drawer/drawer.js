@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Drawer } from 'antd';
 import styles from "./drawer.module.css"
+import { CloseOutlined } from '@ant-design/icons'; 
 import Link from 'next/link';
 const DrawerItem= () => {
   const [open, setOpen] = useState(false);
@@ -10,6 +11,9 @@ const DrawerItem= () => {
   const onClose = () => {
     setOpen(false);
   };
+  const MyCustomCloseIcon = () => (
+    <CloseOutlined style={{ color: 'white' }} />
+  );
   return (
     <div className={styles.drawer} >
 
@@ -18,14 +22,25 @@ const DrawerItem= () => {
       </Button>
 
    
-      <Drawer style={{backgroundColor:'#0c0a18'}}  title= <p style={{color:'#fff'}}>Меню</p> onClose={onClose} open={open}>
+      <Drawer 
+      style={{backgroundColor:'#0c0a18'}}
+        title= <p style={{color:'#fff',letterSpacing:3,fontSize:22}}>Меню</p> 
+        onClose={onClose} 
+        open={open}
+        closeIcon={<MyCustomCloseIcon />} 
+        >
+     
+              <div className={styles.linkBlock}>
+                   <div className={styles.item} ><Link className={styles.a} href='/sprints'>Sprint</Link></div>
+                   <div className={styles.item} ><Link className={styles.a} href='/intensivs'>Интенсивы</Link></div>
+                   <div className={styles.item} ><Link className={styles.a} href="https://naz-dev-125-adaptiv.vercel.app/support"> Поддержка</Link></div>
+                   <div className={styles.item} ><Link className={styles.a} href="https://naz-dev-129-adaptiv.vercel.app/">Бесплатные курсы</Link></div>
+                   <div className={styles.item} ><Link className={styles.a} href='/author'>О нас</Link></div>
+                   <div className={styles.item} ><Link className={styles.a} href='#'>Наше сообщество</Link></div>
+              </div>
 
-       <p ><Link className={styles.a} href='/sprints'>Sprint</Link></p>
-       <p ><Link className={styles.a} href='/intensivs'>Интенсивы</Link></p>
-       <p ><Link className={styles.a} href="https://naz-dev-125-adaptiv.vercel.app/support"> Поддержка</Link></p>
-       <p ><Link className={styles.a} href="https://naz-dev-129-adaptiv.vercel.app/">Бесплатные курсы</Link></p>
-       <p ><Link className={styles.a} href='/author'>О нас</Link></p>
 
+     
       </Drawer>
       </div>
     
