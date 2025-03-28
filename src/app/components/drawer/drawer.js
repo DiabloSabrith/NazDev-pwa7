@@ -38,10 +38,10 @@ const DrawerItem= () => {
                    <div className={styles.item} ><Link className={styles.a} href='/author'>О нас</Link></div>
                    <div className={styles.item} ><Link className={styles.a} href='#'>Наше сообщество</Link></div>
 
-                  <p className={styles.text}>Возраст не важен, важен код! Покажи миру свои возможности  <br/> <span className={styles.span}>(проект создал 17-летним разработчиком)</span></p>
               </div>
               
 
+                  <p className={styles.text}>Возраст не важен, важен код! Покажи миру свои возможности  <br/> <span className={styles.span}>(проект создал 17-летним разработчиком)</span></p>
      
       </Drawer>
       </div>

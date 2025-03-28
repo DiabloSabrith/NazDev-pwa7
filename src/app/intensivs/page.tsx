@@ -1,6 +1,8 @@
+'use client'
 import 'animate.css';
 import Link from "next/link"
 import 'magic.css/dist/magic.min.css';
+import Drawer from '../components/drawer/drawer';
 export default function Intensivs() {
     return(
         <div className="w-340 h-500 mx-auto containerIntensiv ">
@@ -15,7 +17,7 @@ export default function Intensivs() {
                  <li className="transition hover:text-[blueviolet]"><Link href='/author'>О нас</Link></li>
               </ul>
         </header>
-
+        <Drawer/>
         <main className="w-[95%] h-510 mx-auto flex flex-col items-center text-center">
 
             <section className="w-full h-70 flex flex-col items-center justify-center ">

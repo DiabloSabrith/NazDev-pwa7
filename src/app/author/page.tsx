@@ -1,5 +1,6 @@
-
+'use client'
 import Link from "next/link"
+import Drawer from '../components/drawer/drawer';
 export default function Intensivs() {
     return(
         <div className="w-340 h-370 mx-auto containerAuth  ">
@@ -14,7 +15,7 @@ export default function Intensivs() {
                  <li className="transition hover:text-[blueviolet]">О нас</li>
               </ul>
         </header>
-
+        <Drawer/>
         <main className="w-[95%] h-410  mx-auto flex flex-col items-center text-center my-10">
 
             <section className="w-[90%] h-550  rounded-3xl sprintBlock fideInAnim red ">
