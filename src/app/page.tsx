@@ -6,8 +6,7 @@ import 'animate.css';
 import Drawer from "./components/drawer/drawer.js"
 export default function Home() {
   return (
-<div className="  container w-340 h-500 mx-auto  flex  flex-col">
-
+<div className="  container w-340 h-500 mx-auto  flex  flex-col area">
     <header className="w-[95%]  h-12  bg-[#111]   mx-auto  rounded-full flex items-center  justify-between mt-4 mb-4 header">
           <h1 className="text-3xl tracking-[2px] font-semibold ml-10 text-[blueviolet] logoTitle">NazDev </h1>
             <ul className="flex gap-[20px] mr-[4vw] text-[#fff] tracking-[1px]">
@@ -38,21 +37,21 @@ export default function Home() {
                {/*  <div className="w-[50%] h-full"> */}
                {/*    <p className="text-left text-[#fff] text-[23px] leading-[40px] p-10"> <span className="text-[blueviolet]">Моя цель</span> – не просто научить вас кодить, а раскрыть перед вами дверь в мир <span className="text-[blueviolet]">Frontent</span> разработки, показать, что это не тернистый путь, а увлекательное путешествие, полное творчества и возможностей.</p>  */}
                 
-         <div className="w-[25%] h-[80%]  priceItem flex infoItem flex-col items-center justify-center rounded-[10px] transition transform hover:scale-[1.05]">
+         <div className="w-[25%] h-[80%]  priceItem flex infoItem flex-col items-center justify-center rounded-[10px] transition transform hover:scale-[1.05] homePageItem">
           <h3 className="pb-10 text-[#fff] text-4xl animate__animated animate__fadeIn">NazDev <br/> Sprint</h3>
-          <button className="btn  ">Подробнее</button>
+          <button className="btn transition hover:scale-[1.08]  "><Link href="/sprints">Подробнее</Link></button>
          
          </div>
     
-         <div className="w-[25%] h-[80%]  priceItem flex  flex-col  infoItem items-center justify-center rounded-[10px] transition transform hover:scale-[1.05]">
+         <div className="w-[25%] h-[80%]  priceItem flex  flex-col  infoItem items-center justify-center rounded-[10px] transition  homePageItem transform hover:scale-[1.05]">
          <h3 className="pb-10 text-[#fff] text-4xl animate__animated animate__fadeIn">NazDev <br/> Интенсив</h3>
-         <button className="btn   ">Подробнее</button>
+         <button className="btn  transition hover:scale-[1.08] "><Link href="/intensivs">Подробнее</Link></button>
          </div>
 
-         <div className="w-[25%] h-[80%]  priceItem flex infoItem flex-col items-center justify-center rounded-[10px] transition transform hover:scale-[1.05]">
+         <div className="w-[25%] h-[80%]  priceItem flex infoItem flex-col items-center justify-center rounded-[10px]  homePageItem transition transform hover:scale-[1.05]">
          <h3 className="pb-10 text-[#fff] text-4xl animate__animated animate__fadeIn">NazDev <br/> Бесплатные</h3>
         
-         <button className="btn  "><Link href='https://naz-dev-129-adaptiv.vercel.app/'>Начать</Link></button>
+         <button className="btn transition hover:scale-[1.08] "><Link href='https://naz-dev-129-adaptiv.vercel.app/'>Начать</Link></button>
     
          </div>
             </section>
@@ -65,7 +64,7 @@ export default function Home() {
           </div>
 
                 <div className="w-full h-[70%] flex flex-row items-center justify-center advantagesBlockTwo gap-7">
-               <div className=" transform transition-transform hover:scale-[1.05] w-[30%] h-[80%] rounded-3xl bg-[#111] flex   flex-col gap-7 items-center justify-center mainItem">
+               <div className="  homePageItem transform transition-transform hover:scale-[1.05] w-[30%] h-[80%] rounded-3xl bg-[#111] flex   flex-col gap-7 items-center justify-center mainItem">
                 <Image
                 width={60}
                 height={60}
@@ -75,7 +74,7 @@ export default function Home() {
                 <p className="text-[#fff]">Любовь к студентам</p>
                 
                 </div>
-               <div className=" transform transition-transform hover:rotate-[5deg] w-[30%] h-[80%] rounded-3xl bg-[#111] flex flex-col  gap-7 items-center justify-center mainItem">
+               <div className="  homePageItem transform transition-transform hover:rotate-[5deg] w-[30%] h-[80%] rounded-3xl bg-[#111] flex flex-col  gap-7 items-center justify-center mainItem">
                <Image
                   width={60}
                   height={60}
@@ -85,7 +84,7 @@ export default function Home() {
                   <p className="text-[#fff] text-1xl">Быстрый старт в разработке</p>
                </div>
                
-               <div className=" transform transition-transform hover:scale-[1.05] w-[30%] h-[80%] rounded-3xl bg-[#111] flex   flex-col gap-7 items-center justify-center mainItem">
+               <div className="  homePageItem transform transition-transform hover:scale-[1.05] w-[30%] h-[80%] rounded-3xl bg-[#111] flex   flex-col gap-7 items-center justify-center mainItem">
                <Image
                   width={60}
                   height={60}
@@ -108,6 +107,19 @@ export default function Home() {
                   </div>
             </section>
     </main>
+    
+    <ul className="circles">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+     </ul>
 </div>
     )
 }

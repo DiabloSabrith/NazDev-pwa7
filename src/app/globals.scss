@@ -20,6 +20,7 @@ body {
 .magicHoverOne:hover{
   animation: boingOutDown 1s;
 }
+
 .magicHoverTwo:hover{
   transition:  all ease 0.7s;
   box-shadow: 2px 1px 10px rgba(176, 130, 223, 0.6);
@@ -46,6 +47,10 @@ body {
 
 }
 .sprintBlock{
+  background-color: rgb(138, 43, 226,0.1);
+  box-shadow: 2px 1px 10px rgb(138, 43, 226,0.6);
+}
+.record{
   background-color: rgb(138, 43, 226,0.1);
   box-shadow: 2px 1px 10px rgb(138, 43, 226,0.6);
 }
@@ -521,7 +526,42 @@ animation: BetaAnim 1.5s linear infinite;
   }
 
 /* TODO */
-
+.containerRecord {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  .main{
+    height: 600px;
+  }
+  .record{
+    width: 100%;
+    height: 40%;
+    label{
+      padding-top: 10px;
+      font-size: 7vw;
+    }
+  }    
+  .form{
+      margin: 0;
+      gap:10px
+      label{
+       padding-top: 10px;
+      font-size: 6vw;
+      }
+    }
+    .input{
+      height: 45px;
+      font-size: 4vw;
+    }
+  .recordBlock{
+  margin: 0;
+  }
+  .recordOne_Block{
+    display: none;
+    margin: 0;
+  }
+}
+/* TODO */
    .containerSprint{
   width: 100%;
   height: auto;
@@ -731,3 +771,204 @@ animation: BetaAnim 1.5s linear infinite;
     transform: translateY(0);
   }
 }
+.record-card {
+  border: 3px solid #8e44ad; /* Фиолетовый */
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  position: relative; /* Важно для создания псевдоэлемента */
+  overflow: hidden; /* Обрезаем все, что выходит за рамки карточки */
+}
+
+.record-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+   #9d4edd,
+   #c77dff,
+   #3c096c,
+   #e0aaff,
+   #9d4edd
+  );
+  z-index: -1; /* Помещаем псевдоэлемент под контент */
+  animation: borderAnimation 4s linear forwards;
+  background-size: 300%; /* Для плавного перехода */
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100%   50%;
+  }
+}
+/* TODO */
+.homePageItem {
+  border: 3px solid blueviolet; /* Исходный цвет границы */
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  animation: borderColorAnimation 5s ease-in-out infinite; /* Анимируем только цвет границы */
+}
+
+@keyframes borderColorAnimation {
+  0% {
+    border-color: blueviolet; /* Исходный цвет */
+  }
+  20% {
+    border-color: #9d4edd;
+  }
+  40% {
+    border-color: #c77dff;
+  }
+  60% {
+    border-color: #3c096c;
+  }
+  80% {
+    border-color: #e0aaff;
+  }
+  100% {
+    border-color: blueviolet; /* Возвращаемся к исходному цвету */
+  }
+}
+
+/* TODO */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
+
+
+.area{
+    background:transparent;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100%;
+     
+}
+
+.circles{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2100px;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(138, 43, 226,0.4);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+/* TODO */
+
+
