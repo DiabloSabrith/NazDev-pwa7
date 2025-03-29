@@ -1,7 +1,5 @@
 'use client'
 import 'animate.css';
-import Link from "next/link"
-import Drawer from '../components/drawer/drawer';
 export default function Intensivs() {
     return(
         <div className="w-340 h-280 mx-auto containerSprint containerRecord fideInAnim ">
