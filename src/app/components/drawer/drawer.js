@@ -35,8 +35,8 @@ const DrawerItem= () => {
                    <div className={styles.item} ><Link className={styles.a} href='/intensivs'>Интенсивы</Link></div>
                    <div className={styles.item} ><Link className={styles.a} href="https://naz-dev-125-adaptiv.vercel.app/support"> Поддержка</Link></div>
                    <div className={styles.item} ><Link className={styles.a} href="https://naz-dev-129-adaptiv.vercel.app/">Бесплатные курсы</Link></div>
-                   <div className={styles.item} ><Link className={styles.a} href='/author'>О нас</Link></div>
-                   <div className={styles.item} ><Link className={styles.a} href='#'>Наше сообщество</Link></div>
+                   <div className={styles.item} ><Link className={styles.a} href='/author'>Об авторе</Link></div>
+                   <div className={styles.item} ><Link className={styles.a} href='https://t.me/Kulturist_ris'>Наше сообщество</Link></div>
 
               </div>
               

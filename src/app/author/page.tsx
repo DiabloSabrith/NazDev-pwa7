@@ -3,7 +3,7 @@ import Link from "next/link"
 import Drawer from '../components/drawer/drawer';
 export default function Intensivs() {
     return(
-        <div className="w-340 h-700 mx-auto containerAuth   ">
+        <div className="w-340 h-600 mx-auto containerAuth   ">
 
         <header className="w-[95%]  h-12  bg-[#111]  mx-auto  rounded-full flex items-center  justify-between mt-4 mb-4 headerAuth">
               <h1 className="text-3xl tracking-[2px] font-semibold ml-10 text-[blueviolet]  ">NazDev </h1>
@@ -42,7 +42,6 @@ export default function Intensivs() {
                 
                 </div>
 
-
             </section>
         </main>
          {/* TODO   блок о моем техническом стеке */}
@@ -61,10 +60,9 @@ export default function Intensivs() {
          </div>
          <div className="w-[90%] h-[25%] sprintBlock">
              <h3  className="text-[#fff] text-2xl py-3 text-center">Мой стек технологий включает в себя</h3>
-            <p className="text-[#fff] text-left px-15 text-[18px]"><span className="text-[blueviolet] text-2xl leading-10  font-medium">Frontend:</span> Next.js, React, CSS, HT
-            ML, Zustand, Ant Design, React Hook Form</p>
-            <p className="text-[#fff] text-left px-15 text-[18px] "><span className="text-[blueviolet] text-2xl font-medium">Backend:</span>  Nest.js, Node.js, Express
-            , ORM (Prisma), API (REST API)</p>
+            <p className="text-[#fff] text-left px-15 text-[18px]"><span className="text-[blueviolet] text-2xl leading-10  font-medium">Frontend:</span>  Typescript, Java Script , PWA , Next.js, React, CSS, HTML, Zustand, Ant Design, React Hook Form, SCSS , LESS, Git, VS Code, WebStorm, React Native </p>
+            <p className="text-[#fff] text-left px-15 text-[18px] "><span className="text-[blueviolet] text-2xl font-medium">Backend:</span>  Nest.js, Node.js, Express, JWT, HTTPS
+            , ORM (Prisma), API (REST API), Headless CMS</p>
          </div>
          <div className="w-[90%] h-[25%] sprintBlock">
              <p className="text-[#fff] px-15 py-10 text-left text-[18px]">Я верю, что возраст – не преграда для достижения целей. На NazDev я хочу создать сообщество, где ка
