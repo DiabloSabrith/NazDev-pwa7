@@ -4,7 +4,7 @@
 body {
   background-color: #000;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   background-image: radial-gradient(circle, rgba(138, 43, 226,0.3), transparent);
   box-sizing: border-box;
 }
@@ -131,6 +131,19 @@ animation: BetaAnim 1.5s linear infinite;
 
 @media (min-width:475px) and (max-width:990px){
   .container{
+
+    .brand-item {
+      width: 200px;
+      flex-shrink: 0;
+      text-align: center;
+      p{
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 25px;
+        color: rgb(138, 43, 226,0.7);
+      }
+    }
     width: 100%;
     height: auto;
     h1{
@@ -361,7 +374,13 @@ animation: BetaAnim 1.5s linear infinite;
    .containerAuth{
     width: 100%;
     height: auto;
-    
+    .contentBlock{
+      height: auto;
+       }
+     .firstRecordBlock{
+      height: auto;
+      width: 100%;
+       }
     .red{
       height: 100%;
       background-color: transparent;
@@ -428,6 +447,21 @@ animation: BetaAnim 1.5s linear infinite;
   .container{
   width: 100%;
   height: auto;
+  .brand-item {
+    width: 180px;
+    flex-shrink: 0;
+    text-align: center;
+    margin: 0 10px; /* Adjust spacing */
+    margin-bottom: 20px;
+    border-radius: 5px; /* Optional border radius */
+    p{
+      color: #fff;
+      font-weight: 600;
+ 
+      font-size: 20px;
+      color: rgb(138, 43, 226,0.7);
+    }
+   }
   h1{
     font-size: 10vw;
     line-height:12vw;
@@ -555,6 +589,7 @@ animation: BetaAnim 1.5s linear infinite;
     }
   .recordBlock{
   margin: 0;
+  position: relative;
   }
   .recordOne_Block{
     display: none;
@@ -678,13 +713,34 @@ animation: BetaAnim 1.5s linear infinite;
   li{
   font-size: 3vw;
   }
-  /* TODO */
-   }
+}
+/* TODO */
  .containerAuth{
   width: 100%;
   height: auto;
+  .main{
+    h3{
+      padding: 10px 15px 10px 15px ;
+      font-size: 5vw;
+    }
+    p{
+      font-size: 4vw;
+      padding-bottom: 10px;
+    }
+    span{
+      font-size: 5vw;
+    }
+  }
+  .contentBlock{
+    height: auto;
+  }
+  .firstRecordBlock{
+    height: auto;
+    width: 100%;
+  }
+
   .red{
-    height: 100%;
+    height:auto;
     background-color: transparent;
   }
   .cursBlock{
@@ -779,6 +835,21 @@ animation: BetaAnim 1.5s linear infinite;
   position: relative; /* Важно для создания псевдоэлемента */
   overflow: hidden; /* Обрезаем все, что выходит за рамки карточки */
 }
+.recordBlock{
+  position: relative;
+}
+ .btnRecord{
+  position: absolute;
+
+  left: 0;top: 0;
+  padding: 5px 25px;
+  color: #fff;
+  background-color: rgb(138, 43, 226,0.5);
+  letter-spacing: 2px;
+  border-radius: 5px;
+  font-size: 20px;  
+  box-shadow: 2px 1px 10px rgb(138, 43, 226,0.6);
+   }
 
 .record-card::before {
   content: '';
@@ -969,5 +1040,66 @@ animation: BetaAnim 1.5s linear infinite;
 }
 
 /* TODO */
+.brand-slider-container {
 
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  background-color: transparent; /* Optional background */
+}
+
+.brand-list {
+  display: flex;
+  animation: slide 30s linear infinite; /* Adjust duration as needed */
+  width: calc(200px * 10); /* Initial width, adjust as needed */
+}
+
+.brand-item {
+  width: 200px;
+  flex-shrink: 0;
+  text-align: center;
+ 
+  margin: 0 10px; /* Adjust spacing */
+  border-radius: 5px; /* Optional border radius */
+  p{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: rgb(138, 43, 226,0.7);
+  }
+}
+
+.brand-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 5)); /* Move 5 elements */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .brand-list {
+    width: calc(150px * 10); /* Adjust width for smaller screens */
+  }
+
+  .brand-item {
+    width: 150px; /* Adjust item width */
+  }
+
+  @keyframes slide {
+    100% {
+      transform: translateX(calc(-150px * 5)); /* Adjust translation */
+    }
+  }
+}
 

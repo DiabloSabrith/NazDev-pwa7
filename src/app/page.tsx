@@ -14,7 +14,7 @@ export default function Home() {
              <li className="transition hover:text-[blueviolet]"><Link href='/intensivs'>Интенсивы</Link></li>
              <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-125-adaptiv.vercel.app/support"> Поддержка</Link></li>
              <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-129-adaptiv.vercel.app/">Бесплатные курсы</Link></li>
-             <li className="transition hover:text-[blueviolet]"><Link href='/author'>О нас</Link></li>
+             <li className="transition hover:text-[blueviolet]"><Link href='/author'>Об авторе</Link></li>
            
           </ul>
     </header>
@@ -24,36 +24,126 @@ export default function Home() {
     {/* Надо обернуть в section */}
            <h1 className="text-5xl text-[#fff] pt-10  leading-[60px] animate__animated animate__flipInX">Стань лучшим разработчиком<br/> <span className="text-[blueviolet] font-semibold">c NazDev</span></h1>
            <p className=" leading-[35px] text-[#fff] text-[20px] pt-3 animate__animated animate__flipInX">Этот проект разработан семнадцатилетним подростком, стремящимся доказать, <br/>что программирование — это не удел избранных, а возможность, <br/>доступная каждому</p>
-           
-           <div className="flex flex-row gap-3 mt-5 ">
-          
-         
-           </div>
+        
 {/* Second section  */}
-            <section className="w-[85%] h-100 rounded-2xl  mt-20 flex flex-row infoBlock gap-10 items-center justify-center ">
-               {/*  <div className="w-[50%] h-full "> */}
-               {/*    <p className="text-left leading-[40px] text-[24px] text-[#fff] p-10">Согласно статистике, <span className="text-[blueviolet]">95%</span> людей считают, что frontend-разработка и программирование в целом являются сложной задачей. Однако моя <span className="text-[blueviolet]">цель</span>  - опровергнуть это убеждение.</p> */}
-               {/*  </div> */}
-               {/*  <div className="w-[50%] h-full"> */}
-               {/*    <p className="text-left text-[#fff] text-[23px] leading-[40px] p-10"> <span className="text-[blueviolet]">Моя цель</span> – не просто научить вас кодить, а раскрыть перед вами дверь в мир <span className="text-[blueviolet]">Frontent</span> разработки, показать, что это не тернистый путь, а увлекательное путешествие, полное творчества и возможностей.</p>  */}
-                
+
+
+          <section className="w-[85%] h-30  flex items-center mt-10">
+
+          <div className="brand-slider-container">
+       <div className="brand-list">
+      <div className="brand-item">
+       
+        <p>Typescript</p>
+       
+      </div>
+      <div className="brand-item">
+        
+        <p>Java script</p>
+      </div>
+      <div className="brand-item">
+      
+        <p>React</p>
+     
+      </div>
+      <div className="brand-item">
+       
+        <p>Next</p>
+      
+      </div>
+      <div className="brand-item">
+        
+        <p>CSS</p>
+   
+      </div>
+
+     
+      <div className="brand-item">
+     
+        <p>SCSS</p>
+       
+      </div>
+      <div className="brand-item">
+      
+        <p>Tailwind</p>
+    
+      </div>
+      <div className="brand-item">
+      
+        <p>Express</p>
+      
+      </div>
+      <div className="brand-item">
+   
+        <p>HTML</p>
+      
+      </div>
+   
+{/* TODO */}
+
+       <div className="brand-item">
+        
+         <p>Typescript</p>
+        
+       </div>
+       <div className="brand-item">
+         
+         <p>Java script</p>
+       </div>
+       <div className="brand-item">
+             
+         <p>React</p>
+       </div>
+       <div className="brand-item">
+        
+         <p>Next</p>
+             
+       </div>
+       <div className="brand-item">
+         
+         <p>CSS</p>
+       </div>
+       <div className="brand-item">
+         <p>SCSS</p>
+        
+       </div>
+       <div className="brand-item">
+             
+         <p>Tailwind</p>
+       </div>
+       <div className="brand-item">
+             
+         <p>Express</p>
+             
+       </div>
+       <div className="brand-item">
+         <p>HTML</p>
+             
+       </div>
+           </div>
+         </div>
+            </section>
+
+
+            <section className="w-[85%] h-100 rounded-2xl  mt-2 flex flex-row infoBlock gap-10 items-center justify-center "> 
          <div className="w-[25%] h-[80%]  priceItem flex infoItem flex-col items-center justify-center rounded-[10px] transition transform hover:scale-[1.05] homePageItem">
           <h3 className="pb-10 text-[#fff] text-4xl animate__animated animate__fadeIn">NazDev <br/> Sprint</h3>
-          <button className="btn transition hover:scale-[1.08]  "><Link href="/sprints">Подробнее</Link></button>
+          <button className="btn transition hover:scale-[1.08] mt-10 "><Link href="/sprints">Подробнее</Link></button>
          
          </div>
     
          <div className="w-[25%] h-[80%]  priceItem flex  flex-col  infoItem items-center justify-center rounded-[10px] transition  homePageItem transform hover:scale-[1.05]">
          <h3 className="pb-10 text-[#fff] text-4xl animate__animated animate__fadeIn">NazDev <br/> Интенсив</h3>
-         <button className="btn  transition hover:scale-[1.08] "><Link href="/intensivs">Подробнее</Link></button>
+         <button className="btn  transition hover:scale-[1.08] mt-10  "><Link href="/intensivs">Подробнее</Link></button>
          </div>
 
          <div className="w-[25%] h-[80%]  priceItem flex infoItem flex-col items-center justify-center rounded-[10px]  homePageItem transition transform hover:scale-[1.05]">
          <h3 className="pb-10 text-[#fff] text-4xl animate__animated animate__fadeIn">NazDev <br/> Бесплатные</h3>
         
-         <button className="btn transition hover:scale-[1.08] "><Link href='https://naz-dev-129-adaptiv.vercel.app/'>Начать</Link></button>
+         <button className="btn transition hover:scale-[1.08] mt-10  "><Link href='https://naz-dev-129-adaptiv.vercel.app/'>Начать</Link></button>
     
          </div>
+
             </section>
 
             {/* Three section*/}

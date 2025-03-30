@@ -13,6 +13,7 @@ export default function Intensivs() {
                  <li className="transition hover:text-[blueviolet]"><Link href='/intensivs'>Интенсивы</Link></li>
                  <li  className="transition hover:text-[blueviolet]"><Link href='https://naz-dev-125-adaptiv.vercel.app/support'>Поддержка</Link></li>
                  <li  className="transition hover:text-[blueviolet]"><Link href='https://naz-dev-125-adaptiv.vercel.app/'>Бесплатные курсы</Link></li>
+                 <li className="transition hover:text-[blueviolet]"><Link href='/author'>Об авторе</Link></li>
                  
               </ul>
         </header> 

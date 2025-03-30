@@ -1,12 +1,13 @@
 'use client'
 import 'animate.css';
+import Link from "next/link"
 export default function Intensivs() {
     return(
         <div className="w-340 h-280 mx-auto containerSprint containerRecord fideInAnim ">
    
 
             <div className='w-full  h-250  my-20 mx-auto flex  flex-row gap-[30px] items-center justify-center recordBlock'>
-
+            <button className='btnRecord transition hover:scale-[1.07] '><Link href='/'>Назад</Link></button>
               <div className="w-[46%] h-[90%] sprintBlock flex flex-col items-center record-card  recordOne_Block">
                 
                 <h2 className="text-[#9d4edd] text-6xl font-bold pt-80 ">NazDev</h2>
@@ -16,7 +17,7 @@ export default function Intensivs() {
 
               <div className="w-[46%] h-[90%]  record  recordTwo_Block">
                 <form action="" className=' flex flex-col items-center text-[#fff] gap-[20px] mt-60 form'>
-                <label htmlFor="" className="text-3xl text-[#9d4edd]">  Заявка на курс</label>
+                <label htmlFor="" className="text-3xl text-[#fff]">  Заявка на курс</label>
                   <input type="text" placeholder='Enter to first name' className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input" />
                   <input type="text" placeholder='Enter to last name'  className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"/>
                   <input type="text"  placeholder='Enter to email' className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"/>

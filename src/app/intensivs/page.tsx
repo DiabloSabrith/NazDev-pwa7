@@ -14,7 +14,7 @@ export default function Intensivs() {
                  <li className="transition hover:text-[blueviolet]"><Link href='/sprints'>Sprint</Link></li>
                  <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-125-adaptiv.vercel.app/support"> Поддержка</Link></li>
                  <li className="transition hover:text-[blueviolet]"> <Link href="https://naz-dev-129-adaptiv.vercel.app/">Бесплатные курсы</Link></li>
-                 <li className="transition hover:text-[blueviolet]"><Link href='/author'>О нас</Link></li>
+                 <li className="transition hover:text-[blueviolet]"><Link href='/author'>Об авторе</Link></li>
               </ul>
         </header>
         <Drawer/>
@@ -40,7 +40,7 @@ export default function Intensivs() {
                     <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold">UI Testing</h3>
                    <p className="text-[#fff] pt-4 px-7">UI-тестирование с нуля: сделайте ваши приложения надежными</p>
                    <span className='pt-7 text-[yellow] text-3xl tracking-[3px]'>599руб</span>
-                   <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/record">Записаться</Link></button>
+                   <button className="btn mt-20 transition hover:scale-[1.10]"><Link href="/record">Записаться</Link></button>
                     </div>   
                             
   <div className="w-[30%] h-[45%] sprintItem rounded-[15px] transition transform hover:scale-[1.06] intensivItem   sprintBlock flex justify-center items-center flex-col">
