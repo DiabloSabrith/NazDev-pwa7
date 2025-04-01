@@ -26,7 +26,7 @@ export default function Intensivs() {
                  Next.js - от теории к практике! Узнайте, зачем нужен Next.js, как использовать его возможности для создания быстрых и SEO-оптимизированных веб-приложений и как решать типичные проблемы. Участвуйте в живой Q&A сессии и задайте любые вопросы нашим экспертам – мы позаботимся, чтобы каждый участник получил ответы и улучшил свои навыки разработки на Next.js!
                 </p>
 
-            <span className='text-[blueviolet] pt-20  font-semibold  pl-[50%]  '>С уважением от NazDev</span>
+            <span className='text-[blueviolet] pt-20  font-semibold  pl-[46%]  '>С уважением от NazDev</span>
 
             </section>
 

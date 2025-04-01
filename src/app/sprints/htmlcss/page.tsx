@@ -28,7 +28,7 @@ export default function Intensivs() {
                     и в реалином времени обучаться 
                 </p>
 
-            <span className='text-[blueviolet] pt-20  font-semibold  pl-[50%]  '>С уважением от NazDev</span>
+            <span className='text-[blueviolet] pt-20  font-semibold  pl-[46%]  '>С уважением от NazDev</span>
 
             </section>
 
