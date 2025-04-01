@@ -3,6 +3,7 @@ import { Button, Drawer } from 'antd';
 import styles from "./drawer.module.css"
 import { CloseOutlined } from '@ant-design/icons'; 
 import Link from 'next/link';
+import Image from 'next/image';
 const DrawerItem= () => {
   const [open, setOpen] = useState(false);
   const showDrawer = () => {
@@ -18,7 +19,12 @@ const DrawerItem= () => {
     <div className={styles.drawer} >
 
       <Button className={styles.btn} onClick={showDrawer}>
-        Меню
+          <Image
+            alt='adja'
+            src="/img/menu.png"
+            width={30}
+            height={30}
+          />
       </Button>
 
    

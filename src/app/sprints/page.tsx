@@ -7,12 +7,12 @@ export default function Intensivs() {
         <div className="w-340 h-500 mx-auto containerSprint ">
 
         <header className="w-[95%] headerSprint h-12  bg-[#111]  mx-auto  rounded-full flex items-center  justify-between mt-4 mb-4">
-              <h1 className="text-3xl tracking-[2px] font-semibold ml-10 text-[blueviolet] h1 ">NazDev </h1>
+              <h1 className="text-3xl tracking-[2px] font-semibold ml-10 text-[blueviolet] h1 ">NazDev  <span className="text-[#ffdc22] text-[22px] ">Prime</span></h1>
                 <ul className="flex gap-[20px] mr-[4vw] text-[#fff] tracking-[1px]">
                  <li className="transition hover:text-[blueviolet]" ><Link href="/">Главная</Link></li>
                  <li className="transition hover:text-[blueviolet]"><Link href='/intensivs'>Интенсивы</Link></li>
                  <li  className="transition hover:text-[blueviolet]"><Link href='https://naz-dev-125-adaptiv.vercel.app/support'>Поддержка</Link></li>
-                 <li  className="transition hover:text-[blueviolet]"><Link href='https://naz-dev-125-adaptiv.vercel.app/'>Бесплатные курсы</Link></li>
+                 <li  className="transition hover:text-[blueviolet]"><Link href='https://naz-dev-pwa-6.vercel.app/'>Бесплатные курсы</Link></li>
                  <li className="transition hover:text-[blueviolet]"><Link href='/author'>Об авторе</Link></li>
                  
               </ul>

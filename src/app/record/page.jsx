@@ -5,6 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import DOMPurify from 'dompurify';
 import Link from "next/link"
+import Image from "next/image"
 export default function Intensivs() {
   const validationSchema = Yup.object({
     firstName: Yup.string()
@@ -54,7 +55,7 @@ export default function Intensivs() {
         <div className="w-340 h-210 mx-auto containerSprint containerRecord fideInAnim ">
    
 
-            <div className='w-full  h-230  my-20 mx-auto flex  flex-row gap-[30px] items-center justify-center recordBlock'>
+            <div className='w-full  h-230  my-20 mx-auto flex  flex-row gap-[30px]  items-center justify-center recordBlock'>
             <button className='btnRecord transition hover:scale-[1.07]  close-btn'><Link href='/'>Назад</Link></button>
               <div className="w-[46%] h-[90%] sprintBlock flex flex-col items-center record-card  recordOne_Block">
                 
@@ -74,8 +75,17 @@ export default function Intensivs() {
 {/*                 </form> */}
 {/*               </div> */}
 
-   <div className="w-[46%] h-[90%]  record  recordTwo_Block">
-   <form onSubmit={handleSubmit(onSubmit)} className=' flex flex-col items-center text-[#fff] gap-[20px] mt-60 form'>
+   <div className="w-[46%] h-[90%]  record  recordTwo_Block   flex flex-col items-center ">
+    <div className='w-[80px] h-[80px] logoBlock rounded-[50%] mt-[-30px] '>
+      <Image
+      className='rounded-[50%]'
+      width={80}
+      height={80}
+      src="/img/NazDevLogo.jpg"
+      alt='sorry'
+      />
+    </div>
+   <form onSubmit={handleSubmit(onSubmit)} className=' flex flex-col items-center text-[#fff] gap-[20px] mt-60 form w-[100%]'>
      <label htmlFor="firstName" className="text-3xl text-[#fff]">Заявка на курс</label>
      <input
        type="text"
@@ -83,28 +93,28 @@ export default function Intensivs() {
        className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"
        {...register("firstName")}
      />
-     {errors.firstName && <div className="text-red-500">{errors.firstName.message}</div>} {/*  Это такой оператор если выражение слева истинное то выполнчяеться выражение спарва */}
+     {errors.firstName && <div className="text-red-400">{errors.firstName.message}</div>} {/*  Это такой оператор если выражение слева истинное то выполнчяеться выражение спарва */}
      <input
        type="text"
        placeholder='Введите фамилию'
        className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"
        {...register("lastName")}
      />
-     {errors.lastName && <div className="text-red-500">{errors.lastName.message}</div>}
+     {errors.lastName && <div className="text-red-400">{errors.lastName.message}</div>}
      <input
        type="text"
        placeholder='Введите почту'
        className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"
        {...register("email")}
      />
-     {errors.email && <div className="text-red-500">{errors.email.message}</div>}
+     {errors.email && <div className="text-red-400">{errors.email.message}</div>}
      <input
        type="text"
        placeholder='Введите номер телефона'
        className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"
        {...register("phone")}
      />
-     {errors.phone && <div className="text-red-500 text-1xl">{errors.phone.message}</div>}
+     {errors.phone && <div className="text-red-400 text-1xl">{errors.phone.message}</div>}
      <button
        type="submit"
        disabled={isSubmitting}

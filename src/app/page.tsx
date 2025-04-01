@@ -8,12 +8,12 @@ export default function Home() {
   return (
 <div className="  container w-340 h-500 mx-auto  flex  flex-col area">
     <header className="w-[95%]  h-12  bg-[#111]   mx-auto  rounded-full flex items-center  justify-between mt-4 mb-4 header">
-          <h1 className="text-3xl tracking-[2px] font-semibold ml-10 text-[blueviolet] logoTitle">NazDev </h1>
+          <h1 className="text-3xl tracking-[2px] font-semibold ml-10 text-[blueviolet] logoTitle">NazDev <span className="text-[#ffdc22] text-[22px] ">Prime</span> </h1>
             <ul className="flex gap-[20px] mr-[4vw] text-[#fff] tracking-[1px]">
              <li className="transition hover:text-[blueviolet] "><Link href='/sprints'>Sprint</Link></li>
              <li className="transition hover:text-[blueviolet]"><Link href='/intensivs'>Интенсивы</Link></li>
              <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-125-adaptiv.vercel.app/support"> Поддержка</Link></li>
-             <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-129-adaptiv.vercel.app/">Бесплатные курсы</Link></li>
+             <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-pwa-6.vercel.app/">Бесплатные курсы</Link></li>
              <li className="transition hover:text-[blueviolet]"><Link href='/author'>Об авторе</Link></li>
            
           </ul>
@@ -140,7 +140,7 @@ export default function Home() {
          <div className="w-[25%] h-[80%]  priceItem flex infoItem flex-col items-center justify-center rounded-[10px]  homePageItem transition transform hover:scale-[1.05]">
          <h3 className="pb-10 text-[#fff] text-4xl animate__animated animate__fadeIn">NazDev <br/> Бесплатные</h3>
         
-         <button className="btn transition hover:scale-[1.08] mt-10  "><Link href='https://naz-dev-129-adaptiv.vercel.app/'>Начать</Link></button>
+         <button className="btn transition hover:scale-[1.08] mt-10  "><Link href='https://naz-dev-v5.vercel.app/'>Начать</Link></button>
     
          </div>
 

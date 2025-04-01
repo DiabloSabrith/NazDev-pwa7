@@ -131,7 +131,9 @@ animation: BetaAnim 1.5s linear infinite;
 
 @media (min-width:475px) and (max-width:990px){
   .container{
-
+ .circles{
+  display: none;
+ }
     .brand-item {
       width: 200px;
       flex-shrink: 0;
@@ -243,6 +245,9 @@ animation: BetaAnim 1.5s linear infinite;
     }
 
      .containerSprint{
+      .circles{
+        display: none;
+       }
     width: 100%;
     height: auto;
     .mobileBM{
@@ -308,6 +313,9 @@ animation: BetaAnim 1.5s linear infinite;
      /* TODO */
      
     .containerIntensiv{
+      .circles{
+        display: none;
+       }
     width: 100%;
     height: auto;
     .intensivBlock{
@@ -447,6 +455,9 @@ animation: BetaAnim 1.5s linear infinite;
   .container{
   width: 100%;
   height: auto;
+  .circles{
+    display: none;
+  }
   .brand-item {
     width: 180px;
     flex-shrink: 0;
@@ -569,15 +580,21 @@ animation: BetaAnim 1.5s linear infinite;
   }
   .main{
     height: 600px;
+    height: auto;
   }
   .record{
     width: 90%;
     height: 40%;
     height: auto;
+    .logoBlock{
+      display: block;
+    }
     .record-btn{
       width: 50%;
       height: 40px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 17px;
+      padding: 3px 10px;
     }
     label{
       padding-top: 10px;
@@ -611,6 +628,9 @@ animation: BetaAnim 1.5s linear infinite;
 }
 /* TODO */
    .containerSprint{
+    .circles{
+      display: none;
+     }
   width: 100%;
   height: auto;
   .mobileBM{
@@ -668,6 +688,9 @@ animation: BetaAnim 1.5s linear infinite;
    /* TODO */
    
   .containerIntensiv{
+    .circles{
+      display: none;
+     }  
   width: 100%;
   height: auto;
 
@@ -840,6 +863,9 @@ animation: BetaAnim 1.5s linear infinite;
     opacity: 1;
     transform: translateY(0);
   }
+}
+.logoBlock{
+  display: none;
 }
 .record-card {
   border: 3px solid #8e44ad; /* Фиолетовый */
