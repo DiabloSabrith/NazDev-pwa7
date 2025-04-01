@@ -563,15 +563,29 @@ animation: BetaAnim 1.5s linear infinite;
   width: 100%;
   height: auto;
   margin: 0;
+  background-color: transparent;
+  .close-btn{
+    display: none;
+  }
   .main{
     height: 600px;
   }
   .record{
-    width: 100%;
+    width: 90%;
     height: 40%;
+    height: auto;
+    .record-btn{
+      width: 50%;
+      height: 40px;
+      margin-bottom: 10px;
+    }
     label{
       padding-top: 10px;
       font-size: 7vw;
+    }
+    .record-btn{
+   
+      padding: 3px 10px;
     }
   }    
   .form{
@@ -1036,9 +1050,7 @@ animation: BetaAnim 1.5s linear infinite;
         opacity: 0;
         border-radius: 50%;
     }
-
 }
-
 /* TODO */
 .brand-slider-container {
 

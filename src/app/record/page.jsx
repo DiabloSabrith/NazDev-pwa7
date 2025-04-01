@@ -17,8 +17,10 @@ export default function Intensivs() {
       .min(2, 'Фамилия должно быть не менее 2 символов')
       .matches(/^[a-zA-Zа-яА-Я\s]+$/, 'Фамилия может содержать только буквы и пробелы')
       .trim(),
+
     email: Yup.string()
       .required('Пожалуйста, введите email')
+      .min(6,'Имя почты не может быть короче 6 символом')
       .email('Неверный формат email')
       .trim(),
     phone: Yup.string()
@@ -53,7 +55,7 @@ export default function Intensivs() {
    
 
             <div className='w-full  h-230  my-20 mx-auto flex  flex-row gap-[30px] items-center justify-center recordBlock'>
-            <button className='btnRecord transition hover:scale-[1.07] '><Link href='/'>Назад</Link></button>
+            <button className='btnRecord transition hover:scale-[1.07]  close-btn'><Link href='/'>Назад</Link></button>
               <div className="w-[46%] h-[90%] sprintBlock flex flex-col items-center record-card  recordOne_Block">
                 
                 <h2 className="text-[#9d4edd] text-6xl font-bold pt-80 ">NazDev</h2>
@@ -77,36 +79,36 @@ export default function Intensivs() {
      <label htmlFor="firstName" className="text-3xl text-[#fff]">Заявка на курс</label>
      <input
        type="text"
-       placeholder='Enter to first name'
+       placeholder='Введите имя'
        className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"
        {...register("firstName")}
      />
      {errors.firstName && <div className="text-red-500">{errors.firstName.message}</div>} {/*  Это такой оператор если выражение слева истинное то выполнчяеться выражение спарва */}
      <input
        type="text"
-       placeholder='Enter to last name'
+       placeholder='Введите фамилию'
        className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"
        {...register("lastName")}
      />
      {errors.lastName && <div className="text-red-500">{errors.lastName.message}</div>}
      <input
        type="text"
-       placeholder='Enter to email'
+       placeholder='Введите почту'
        className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"
        {...register("email")}
      />
      {errors.email && <div className="text-red-500">{errors.email.message}</div>}
      <input
        type="text"
-       placeholder='Enter to phone'
+       placeholder='Введите номер телефона'
        className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"
        {...register("phone")}
      />
-     {errors.phone && <div className="text-red-500 text-2xl">{errors.phone.message}</div>}
+     {errors.phone && <div className="text-red-500 text-1xl">{errors.phone.message}</div>}
      <button
        type="submit"
        disabled={isSubmitting}
-       className=' bg-[#9d4edd] py-[5px] px-[20px] rounded-[10px] w-[80%] h-[50px] transition hover:scale-[1.05]  text-2xl tracking-[2px]'
+       className=' bg-[#9d4edd] py-[5px] px-[20px] rounded-[10px] w-[80%] h-[50px] transition hover:scale-[1.05]  text-2xl tracking-[2px] record-btn'
      >
        {isSubmitting ? 'Отправка...' : 'Отправить'}
      </button>
