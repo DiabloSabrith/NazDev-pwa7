@@ -2,7 +2,8 @@
 import 'animate.css';
 import Link from "next/link"
 export default function Intensivs() {
-    return(
+  
+    return( 
         <div className="w-340 h-280 mx-auto containerSprint containerRecord fideInAnim ">
    
 

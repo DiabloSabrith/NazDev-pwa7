@@ -1,0 +1,35 @@
+ 
+ @media (min-width:320px)  and (max-width:475px){
+    .main{
+        display: flex;
+        flex-direction: column ;
+        height: auto;
+        width: 100%;
+        gap: 0.5;
+        section{
+         padding: 20px 20px;
+         h3{
+            padding-top: 10px;  
+            font-size: 8vw;
+            padding-bottom: 16px;
+         }
+        }
+        .oneSection{
+         p{
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 0;
+         }
+         span{
+            font-size: 3.5vw;
+            padding-top: 15px;
+         }
+        }
+        .twoSection{
+            height: auto;
+            .item{
+                height: 300px;
+            }
+        }
+    }   
+ }

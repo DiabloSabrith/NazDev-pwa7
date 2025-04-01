@@ -33,33 +33,33 @@ export default function Intensivs() {
                    <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold">Java Script</h3>
                   <p className="text-[#fff] pt-4 px-7">Быстрый старт в мир JavaScript! Интенсив для начинающих, где за короткий срок вы освоите основы языка </p>
                   <span className='pt-7 text-[yellow] text-3xl tracking-[3px]'>1999руб</span>
-                  <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/record">Записаться</Link></button>
+                  <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/intensivs/js">Подробнее</Link></button>
                    </div> 
 
                     <div className="w-[30%] h-[45%] sprintItem rounded-[15px] transition transform hover:scale-[1.06] intensivItem   sprintBlock flex justify-center items-center flex-col">
                     <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold">UI Testing</h3>
                    <p className="text-[#fff] pt-4 px-7">UI-тестирование с нуля: сделайте ваши приложения надежными</p>
                    <span className='pt-7 text-[yellow] text-3xl tracking-[3px]'>599руб</span>
-                   <button className="btn mt-20 transition hover:scale-[1.10]"><Link href="/record">Записаться</Link></button>
+                   <button className="btn mt-20 transition hover:scale-[1.10]"><Link href="/intensivs/testing">Подробнее</Link></button>
                     </div>   
                             
   <div className="w-[30%] h-[45%] sprintItem rounded-[15px] transition transform hover:scale-[1.06] intensivItem   sprintBlock flex justify-center items-center flex-col">
   <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold">Next</h3>
  <p className="text-[#fff] pt-4 px-7"> Интенсив для начинающих создавайте производительные веб-приложения с React и Next</p>
  <span className='pt-7 text-[yellow] text-3xl tracking-[3px]'>599руб</span>
- <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/record">Записаться</Link></button>
+ <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/intensivs/next">Подробнее</Link></button>
   </div>   
   <div className="w-[30%] h-[45%] sprintItem rounded-[15px] transition transform hover:scale-[1.06]  intensivItem  sprintBlock flex justify-center items-center flex-col">
   <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold">State Managment</h3>
  <p className="text-[#fff] pt-4 px-7">Управление состоянием с нуля: Организуйте данные в ваших приложениях!</p>
  <span className='pt-7 text-[yellow] text-3xl tracking-[3px]'>599руб</span>
- <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/record">Записаться</Link></button>
+ <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/intensivs/state">Подробнее</Link></button>
   </div>   
   <div className="w-[30%] h-[45%] sprintItem rounded-[15px] transition transform hover:scale-[1.06]  intensivItem  sprintBlock flex justify-center items-center flex-col">
   <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold">Express</h3>
  <p className="text-[#fff] pt-4 px-7">Express  интенсив для начинающих. Веб-разработка на Node.js стала проще!</p>
  <span className='pt-7 text-[yellow] text-3xl tracking-[3px]'>599руб</span>
- <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/record">Записаться</Link></button>
+ <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/intensivs/express">Подробнее</Link></button>
   </div>   
 
 

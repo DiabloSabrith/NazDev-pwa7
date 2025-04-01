@@ -44,6 +44,7 @@ export default function Intensivs() {
 
             </section>
         </main>
+        
          {/* TODO   блок о моем техническом стеке */}
  <section className="w-[95%] h-250   flex flex-col mx-auto  items-center gap-10 main">
          <div className="w-[90%] h-[25%] sprintBlock">
@@ -61,7 +62,7 @@ export default function Intensivs() {
          <div className="w-[90%] h-[25%] sprintBlock">
              <h3  className="text-[#fff] text-2xl py-3 text-center">Мой стек технологий включает в себя</h3>
             <p className="text-[#fff] text-left px-15 text-[18px]"><span className="text-[blueviolet] text-2xl leading-10  font-medium">Frontend:</span>  Typescript, Java Script , PWA , Next.js, React, CSS, HTML, Zustand, Ant Design, React Hook Form, SCSS , LESS, Git, VS Code, WebStorm, React Native </p>
-            <p className="text-[#fff] text-left px-15 text-[18px] "><span className="text-[blueviolet] text-2xl font-medium">Backend:</span>  Nest.js, Node.js, Express, JWT, HTTPS
+            <p className="text-[#fff] text-left px-15 text-[18px] "><span className="text-[blueviolet] text-2xl font-medium">Backend:</span>  Nest.js, Node.js, Express, JWT, HTTPS, PostgreSQl, MySQl
             , ORM (Prisma), API (REST API), Headless CMS</p>
          </div>
          <div className="w-[90%] h-[25%] sprintBlock">
