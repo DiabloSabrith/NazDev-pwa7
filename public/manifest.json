@@ -4,8 +4,8 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "NazDev",
-    "short_name": "NazDev Curs",
+    "name": "NazDev Prime",
+    "short_name": "NazDev Prime",
     "icons": [
       {
         "src": "/img/logo192.png",
