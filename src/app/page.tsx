@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link"
 import 'animate.css';
 import Drawer from "./components/drawer/drawer.js"
-import Carousel from "./components/carousel/carousel.jsx";
 export default function Home() {
   return (
 <div className="  container w-340 h-500 mx-auto  flex  flex-col area">
