@@ -8,7 +8,7 @@ export default function Intensivs() {
     return(
         <div className="w-340 h-500 mx-auto containerIntensiv  ">
 
-        <header className="w-[95%]  h-12  bg-[#111]  mx-auto  rounded-full flex items-center   headerIntensiv justify-between mt-4 mb-4">
+        <header className="w-[95%]  h-12  bg-[#111]  mx-auto   rounded-[5px]  flex items-center   headerIntensiv justify-between mt-4 mb-4">
               <h1 className="text-3xl tracking-[2px] font-semibold ml-10 text-[blueviolet] h1 ">NazDev  <span className="text-[#ffdc22] text-[22px] ">Prime</span></h1>
                 <ul className="flex gap-[20px] mr-[4vw] text-[#fff] tracking-[1px]">
                  <li className="transition hover:text-[blueviolet]" ><Link href="/">Главная</Link></li>
@@ -23,7 +23,7 @@ export default function Intensivs() {
 
             <section className="w-full h-70 flex flex-col items-center justify-center ">
             <h1 className="text-5xl text-[#fff] pt-10  leading-[60px] font-medium tracking-[2px] animate__animated animate__zoomIn">NazDev <span className="text-[blueviolet] font-semibold">Интенсивы</span></h1>
-            <p className=" leading-[35px] text-[#fff] text-[20px] pt-3  animate__animated animate__zoomIn p">Интенсивы – это не скучные лекции, а концентрированная практика! Быстро познакомьтесь с новыми технологиями,<br/> решите реальные задачи и получите опыт, который сразу сможете применить в работе. <br/>Идеально для тех, кто хочет быть впереди!</p>
+            <p className=" leading-[35px] text-[#fff] text-[20px] pt-3  animate__animated animate__zoomIn p px-60">Интенсивы – это не скучные лекции, а концентрированная практика! Быстро познакомьтесь с новыми технологиями, решите реальные задачи и получите опыт, который сразу сможете применить в работе. Идеально для тех, кто хочет быть впереди!</p>
             </section>
 
             <section className="w-[90%] h-300 rounded-3xl ">
@@ -71,17 +71,17 @@ export default function Intensivs() {
 
         </main>
         <ul className="circles">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-  </ul>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+        </ul>
         </div>
     )
 }

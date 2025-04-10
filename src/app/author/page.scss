@@ -1,3 +1,5 @@
+
+
 @media (min-width:320px) and (max-width:575px){
 
 .containerAuth{
@@ -9,6 +11,10 @@
         margin-top: 20px;
     }
     .main{
+      .sprintBlock{
+        background-color: rgb(138, 43, 226,0.1);
+        box-shadow: 2px 1px 10px rgb(138, 43, 226,0.6);
+      }
       h3{
         padding: 10px 15px 10px 15px ;
         font-size: 5vw;
@@ -23,6 +29,7 @@
     }
     .contentBlock{
       height: auto;
+     
     }
     .firstRecordBlock{
       height: auto;
@@ -31,6 +38,7 @@
     .red{
       height:auto;
       background-color: transparent;
+     
     }
     .cursBlock{
       display: none;

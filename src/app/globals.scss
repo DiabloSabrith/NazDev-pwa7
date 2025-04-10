@@ -259,7 +259,7 @@ animation: BetaAnim 1.5s linear infinite;
        }
     .red{
       height: 100%;
-      background-color: transparent;
+      background-color:transparent;
     }
     .cursBlock{
       display: none;
@@ -497,6 +497,9 @@ animation: BetaAnim 1.5s linear infinite;
   box-shadow: 2px 1px 10px rgb(138, 43, 226,0.6);
    }
 
+   .footerItemOne ,.footerItem{
+    border: solid 1px rgb(138, 43, 226,0.5);
+   }
 .record-card::before {
   content: '';
   position: absolute;
@@ -527,12 +530,11 @@ animation: BetaAnim 1.5s linear infinite;
 }
 /* TODO */
 .homePageItem {
-  border: 3px solid blueviolet; /* Исходный цвет границы */
+  border: 3px solid rgb(138, 43, 226,0.5); /* Исходный цвет границы */
   border-radius: 10px;
   text-align: center;
   font-size: 16px;
   color: #333;
-  animation: borderColorAnimation 5s ease-in-out infinite; /* Анимируем только цвет границы */
 }
 
 @keyframes borderColorAnimation {
