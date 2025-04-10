@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link"
 import Drawer from '../components/drawer/drawer';
+import "./page.scss"
 export default function Intensivs() {
     return(
         <div className="w-340 h-600 mx-auto containerAuth   ">
@@ -24,7 +25,7 @@ export default function Intensivs() {
                     <div className="w-[100%] h-100  rounded-[10px] authorBlock flex flex-row items-center justify-center gap-7  authInfo ">
 
                         <div className="w-[35%] h-[80%]  flex flex-col items-center justify-center ">
-                            <div className="w-[150px] h-[150px] rounded-[50%] border-2 border-[blueviolet] flex items-center justify-center"></div>
+                            <div className="w-[150px] h-[150px] rounded-[50%] border-2 border-[blueviolet] flex items-center justify-center cycle "></div>
                             <h3 className="pt-5 text-[#fff] text-3xl tracking-[2px]">NazDev</h3>
                         </div>
 
@@ -33,11 +34,8 @@ export default function Intensivs() {
                         </div>
                     </div>
                     <div className="w-[100%] h-90 bg-amber-500 text-left text-[18px] px-10  flex items-center justify-center sprintBlock authInfoTwo">
-                        <p className="text-[#fff]">NazDev создан, чтобы изменить представление о веб-разработке! Многие новички считают, что это удел избранных, но я, NazDev, уверен: создание сайтов, мобильных и веб-приложений доступно каждому. Достойное образование + упорство = квалифицированный разработчик. В 17 лет я написал NazDev, чтобы доказать: стать лучшим никогда не поздно!”
-
-                        Вариант 2 (более развернутый, с акцентом на возможности):
-                        
-                        “Почему я создал NazDev? Потому что верю: разработка сайтов и веб-приложений – это не элитарный клуб, а возможность для каждого, кто хочет изменить мир IT! Многие новички ошибочно считают это чем-то запредельным, но я, NazDev, уверен, что с качественным образованием и усердием, стать квалифицированным разработчиком неизбежно. В 17 лет я написал NazDev, чтобы показать, что учиться и расти – можно в любом возрасте.</p>
+                        <p className="text-[#fff]"> 
+                          Почему я создал NazDev? Потому что верю: разработка сайтов и веб-приложений – это не элитарный клуб, а возможность для каждого, кто хочет изменить мир IT! Многие новички ошибочно считают это чем-то запредельным, но я, NazDev, уверен, что с качественным образованием и усердием, стать квалифицированным разработчиком неизбежно. В 17 лет я создал NazDev, чтобы показать, что учиться и расти – можно в любом возрасте.</p>
                   </div>
                 
                 </div>

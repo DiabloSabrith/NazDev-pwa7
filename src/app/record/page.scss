@@ -1,0 +1,118 @@
+
+
+@media (min-width:320px) and (max-width:575px){
+    .containerRecord {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background-color: transparent;
+        .close-btn{
+          display: none;
+        }
+        .main{
+          height: 600px;
+          height: auto;
+        }
+        .record{
+          width: 90%;
+          height: 40%;
+          height: auto;
+          .logoBlock{
+            display: block;
+          }
+          .record-btn{
+            width: 50%;
+            height: 40px;
+            margin-bottom: 20px;
+            font-size: 17px;
+            padding: 3px 10px;
+          }
+          label{
+            padding-top: 10px;
+            font-size: 7vw;
+          }
+          .record-btn{
+            padding: 3px 10px;
+          }
+        }    
+        .form{
+            margin: 0;
+            gap:10px
+            label{
+             padding-top: 10px;
+            font-size: 6vw;
+            }
+          }
+          .input{
+            height: 45px;
+            font-size: 4vw;
+          }
+        .recordBlock{
+        margin: 0;
+        position: relative;
+        }
+        .recordOne_Block{
+          display: none;
+          margin: 0;
+        }
+      }
+}
+@media (min-width:575px) and (max-width:991px){
+  .containerRecord {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: transparent;
+    .close-btn{
+      display: none;
+    }
+    .main{
+      height: 600px;
+      height: auto;
+    }
+    .record{
+      width: 90%;
+      height: 50%;
+      height: 500px;
+      background-color: rgba(138, 43, 226, 0.1);
+    box-shadow: 2px 1px 10px rgba(138, 43, 226, 0.6); 
+      .logoBlock{
+        display: block;
+      }
+      .record-btn{
+        width: 30%;
+        height: 40px;
+        margin-bottom: 0px;
+        font-size: 17px;
+        padding: 3px 10px;
+      }
+      label{
+        padding-top: 10px;
+        font-size: 4vw;
+      }
+      .record-btn{
+        padding: 3px 10px;
+        margin-top: 3vw;
+      }
+    }    
+    .form{
+      background-color: transparent;
+        margin: 0;
+        gap:2vw;
+        width: 85%;
+       height: 87%;
+      }
+      .input{
+        height: 55px;
+        font-size: 3.7vw;
+      }
+    .recordBlock{
+    margin: 0;
+    position: relative;
+    }
+    .recordOne_Block{
+      display: none;
+      margin: 0;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 import 'animate.css';
 import Link from "next/link"
 import Drawer from '../components/drawer/drawer';
+import "./sprints.page.scss"
 export default function Intensivs() {
     return(
         <div className="w-340 h-500 mx-auto containerSprint ">
@@ -19,14 +20,14 @@ export default function Intensivs() {
         </header> 
          <Drawer /> 
 
-        <main className="w-[95%] h-510 mx-auto flex flex-col items-center text-center ">
+        <main className="w-[95%] h-510 mx-auto flex flex-col items-center text-center  ">
 
             <section className="w-full h-70 flex flex-col  items-center justify-center ">
             <h1 className="text-5xl text-[#fff] pt-10  leading-[60px] font-medium tracking-[2px] animate__animated animate__zoomInDown">NazDev <span className="text-[blueviolet] font-semibold">Sprint</span></h1>
-            <p className=" leading-[35px] text-[#fff] text-[20px] pt-3 animate__animated animate__zoomInDown">Это серия быстрых, сфокусированных мастер-классов, призванных дать вам ключевые <br/>знания и навыки для создания современных веб-приложений </p>
+            <p className=" leading-[35px] text-[#fff] text-[20px] pt-3 animate__animated animate__zoomInDown px-60">Это серия быстрых, сфокусированных мастер-классов, призванных дать вам ключевые знания и навыки для создания современных веб-приложений </p>
             </section>
 
-            <section className="w-[90%] h-300  rounded-3xl  sprintMainBlock ">
+            <section className="w-[90%] h-300  rounded-3xl  sprintMainBlock main">
 {/* First */}
                 <div className="w-[90%] h-250 mx-auto flex flex-row gap-10 flex-wrap items-center justify-center pt-10 ">
 

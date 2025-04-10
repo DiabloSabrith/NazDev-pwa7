@@ -1,0 +1,48 @@
+ <input
+   type="text"
+   placeholder='Введите почту'
+   className="w-[80%] border-1 border-[#9d4edd] rounded-[10px] h-[60px] pl-4 text-2xl outline-0 transition hover:scale-[1.02] input"
+   {...register("email")}
+ />
+ {errors.email && <div className="text-red-400">{errors.email.message}</div>}
+ 
+
+
+
+
+
+
+
+ const onSubmit = async (data) => {
+    // 1. Санитизация данных
+    const sanitizedData = {
+        firstName: DOMPurify.sanitize(data.firstName),
+        lastName: DOMPurify.sanitize(data.lastName),
+        email: DOMPurify.sanitize(data.email),
+        phone: DOMPurify.sanitize(data.phone),
+    };
+
+    // 2. Вывод в консоль (для отладки) - можно убрать в production
+    console.log('Отправленные данные:', sanitizedData);
+
+    try {
+        const res = await fetch('https://demo-server-production-048a.up.railway.app', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(sanitizedData), // Отправляем санитизированные данные
+        });
+
+        if (!res.ok) {
+            // Обрабатываем HTTP ошибки
+            const errorData = await res.json(); // Пытаемся получить сообщение об ошибке от сервера
+            throw new Error(`HTTP error! Status: ${res.status}, Message: ${errorData?.message || 'Unknown error'}`);
+        }
+
+        alert('Форма успешно отправлена!'); // Замените на более подходящее уведомление
+        reset(); // Очищаем форму только при успешной отправке
+
+    } catch (err) {
+        console.error('Ошибка при отправке формы:', err);
+        alert(`Ошибка: ${err.message}`); // Показываем сообщение об ошибке
+    }
+};

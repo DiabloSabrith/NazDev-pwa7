@@ -17,9 +17,9 @@ export default function Intensivs() {
         </header> 
 
         
-        <main className=' w-[95%] h-200   mx-auto flex flex-row items-center text-center my-10 firstRecordBlock    gap-10  justify-center main '>
+        <main className=' w-[95%] h-200   mx-auto flex flex-row items-center text-left my-10 firstRecordBlock    gap-10  justify-center main '>
 
-            <section className=' w-[45%] h-[90%] bg-amber-400  flex flex-col  sprintBlock items-center  relative oneSection '>
+            <section className=' w-[45%] h-[90%] bg-amber-400  flex flex-col  sprintBlock items-center  relative oneSection sprintItem '>
 
                 <h3 className='text-[#fff] font-bold text-5xl pt-30 tracking-[4px]'>Java script</h3>
                 <p className='text-[#fff]  px-[60px] text-[18px] pt-15 leading-8'>
@@ -33,13 +33,16 @@ export default function Intensivs() {
 
             </section>
 
-            <section className=' w-[45%] h-[90%]  flex items-center justify-center  sprintBlock twoSection'>
+            <section className=' w-[45%] h-[90%]  flex items-center justify-center  sprintBlock twoSection sprintItem '>
 
-            <div className="w-[70%] h-[65%] sprintItem rounded-[15px] transition transform hover:scale-[1.06]   sprintBlock item  sprintBlockItem flex justify-center items-center flex-col">
+            <div className="w-[70%] h-[65%] sprintItem rounded-[15px] transition transform hover:scale-[1.06] blockOver text-center relative  sprintBlock item  sprintBlockItem flex justify-center items-center flex-col">
                  <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold ">Java script</h3>
                    <p className="text-[#fff] pt-4 px-7">Создание сайта портфолио без применения библиотек</p>
                 <span className='pt-7 text-[yellow] text-3xl tracking-[3px]'>799руб</span>
                 <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/record">Записаться</Link></button>
+                <div className="overlay flex flex-row ">
+                    <h2 ></h2>
+                </div>
                </div>
         </section>
 

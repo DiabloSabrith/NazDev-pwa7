@@ -3,6 +3,7 @@ import 'animate.css';
 import Link from "next/link"
 import 'magic.css/dist/magic.min.css';
 import Drawer from '../components/drawer/drawer';
+import "./page.scss"
 export default function Intensivs() {
     return(
         <div className="w-340 h-500 mx-auto containerIntensiv  ">
@@ -22,7 +23,7 @@ export default function Intensivs() {
 
             <section className="w-full h-70 flex flex-col items-center justify-center ">
             <h1 className="text-5xl text-[#fff] pt-10  leading-[60px] font-medium tracking-[2px] animate__animated animate__zoomIn">NazDev <span className="text-[blueviolet] font-semibold">Интенсивы</span></h1>
-            <p className=" leading-[35px] text-[#fff] text-[20px] pt-3  animate__animated animate__zoomIn">Интенсивы – это не скучные лекции, а концентрированная практика! Быстро познакомьтесь с новыми технологиями,<br/> решите реальные задачи и получите опыт, который сразу сможете применить в работе. <br/>Идеально для тех, кто хочет быть впереди!</p>
+            <p className=" leading-[35px] text-[#fff] text-[20px] pt-3  animate__animated animate__zoomIn p">Интенсивы – это не скучные лекции, а концентрированная практика! Быстро познакомьтесь с новыми технологиями,<br/> решите реальные задачи и получите опыт, который сразу сможете применить в работе. <br/>Идеально для тех, кто хочет быть впереди!</p>
             </section>
 
             <section className="w-[90%] h-300 rounded-3xl ">
