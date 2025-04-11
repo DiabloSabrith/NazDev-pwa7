@@ -1,7 +1,8 @@
 'use client'
+
+import ReCAPTCHA from 'react-google-recaptcha';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import 'animate.css';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -172,6 +173,15 @@ export default function Intensivs() {
        {...register("phone")}
      />
      {errors.phone && <div className="text-red-400 text-1xl">{errors.phone.message}</div>}
+
+     {/* TODO */}
+      <section className='w-[80%] h-20 flex   items-center justify-center'>
+        <ReCAPTCHA sitekey ={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+        theme='dark'
+       />
+      </section>
+    {/* TODO */}
+
 
      <button
        type="submit"

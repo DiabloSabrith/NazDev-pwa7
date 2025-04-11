@@ -13,7 +13,7 @@ export default function Home() {
              <li className="transition hover:text-[blueviolet] "><Link href='/sprints'>Sprint</Link></li>
              <li className="transition hover:text-[blueviolet]"><Link href='/intensivs'>Интенсивы</Link></li>
              <li className="transition hover:text-[blueviolet]"><Link href='/author'>Об авторе</Link></li>
-             <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-125-adaptiv.vercel.app/support"> Поддержка</Link></li>
+             <li className="transition hover:text-[blueviolet]"><Link href="/support"> Поддержка</Link></li>
              <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-pwa-6.vercel.app/">Бесплатные курсы</Link></li>
            
           </ul>
