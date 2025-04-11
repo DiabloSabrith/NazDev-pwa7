@@ -24,7 +24,7 @@ export default function Intensivs() {
             <section className='w-[100%] h-170  flex flex-row items-center justify-center gap-5'>
 
                 <div className='w-[40%] h-[80%] bg-[blue]  text-left'>
-                     <h2>NazDev</h2>
+                     <h2 className='text-[80px] font-bold text-[#fff]'>NazDev</h2>
                         <p>
                         Добро пожаловать в раздел поддержки NazDev! Мы стремимся сделать ваше обучение максимально комфортным и эффективным. Наша команда всегда готова помочь вам на каждом этапе вашего образовательного пути.
                         </p>
