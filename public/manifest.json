@@ -3,7 +3,7 @@
     "background_color": "#f0f0f0",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/",
+    "start_url": "/app/start_page",
     "name": "NazDev Prime",
     "short_name": "NazDev Prime",
     "icons": [
