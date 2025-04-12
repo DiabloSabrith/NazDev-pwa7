@@ -32,8 +32,8 @@ export default function Intensivs() {
 
             </section>
 
-            <section className=' w-[45%] h-[90%]  flex items-center justify-center  sprintBlock twoSection'>
-
+            <section className=' w-[45%] h-[90%]  flex flex-col items-center justify-center  sprintBlock twoSection'>
+                <h2 className='my-10 text-2xl text-[blueviolet]'>Oсталось мест : <span className='text-[yellow]'>5/10</span></h2>
             <div className="w-[70%] h-[65%] sprintItem rounded-[15px] transition transform hover:scale-[1.06]   sprintBlock item  sprintBlockItem flex justify-center items-center flex-col">
                  <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold ">Html+CSS</h3>
                    <p className="text-[#fff] pt-4 px-7">Создание сайта портфолио без применения библиотек</p>

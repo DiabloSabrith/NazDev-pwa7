@@ -73,7 +73,7 @@ export default function Intensivs() {
                 </div>
             </section>
             {/* TODO */}
-            <section className='w-[100%] h-270  flex flex-col items-center justify-center px-[10px]  gap-10 my-10'>
+            <section className='w-[100%] h-270  flex flex-col items-center justify-center px-[10px]  gap-9 my-10 secondBlock-sup'>
 
                 <div className='w-[90%] h-[20%] bg-[red] supportItem transition hover:scale-[1.05]'></div>
                 <div className='w-[90%] h-[20%] bg-[red] supportItem transition hover:scale-[1.05]'></div>

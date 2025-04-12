@@ -25,22 +25,6 @@ body {
   transition:  all ease 0.7s;
   box-shadow: 2px 1px 10px rgba(176, 130, 223, 0.6);
 }
-.priceItem::before{
-  content: 'BETA';
-  position: absolute;
-  width: 40%;
-  height: 35px;
-  top: -3%;
-  color: yellow;
-  font-size: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: -10%;
-  font-weight: bold;
-  transform: rotate(-13deg);
-  animation: BetaAnim 1.5s linear infinite;
-}
 .authorBlock{
   background-color: rgb(138, 43, 226,0.1);
   box-shadow: 2px 1px 10px rgb(138, 43, 226,0.6);
@@ -70,22 +54,6 @@ header{
 }
 .sprintItem{
   background-color: rgb(138, 43, 226,0.2);
-}
-.sprintItem::before{
-  content: 'BETA';
-position: absolute;
-width: 40%;
-height: 35px;
-top: -3%;
-color: yellow;
-font-size: 22px;
-display: flex;
-justify-content: center;
-align-items: center;
-left: -10%;
-font-weight: bold;
-transform: rotate(-13deg);
-animation: BetaAnim 1.5s linear infinite;
 }
 .fideInAnim{
   animation: fadeIn 1s ease-in-out forwards;

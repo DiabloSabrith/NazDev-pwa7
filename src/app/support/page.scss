@@ -1,3 +1,4 @@
+
 .supportItem{
     background-color: rgb(138, 43, 226,0.1);
     box-shadow: 0 5px 10px 0 rgb(138, 43, 226,0.6);
@@ -17,6 +18,17 @@
 }
 @media (min-width:320px)and (max-width:575px) {
   .containerSprint{
+    .linkSup-block{
+      gap: 10px;
+      .linkSup-item{
+        a{
+          font-size: 4vw;
+        }
+      }
+    }
+    .secondBlock-sup{
+      margin-top:0 ;
+    }
     .circles{
       display: none;
     }
