@@ -20,7 +20,7 @@ export default function Intensivs() {
         </header> 
          <Drawer /> 
 
-        <main className="w-[95%] h-510 mx-auto flex flex-col items-center text-center  ">
+        <main className="w-[95%] h-500 mx-auto flex flex-col items-center text-center  ">
 
             <section className="w-full h-70 flex flex-col  items-center justify-center ">
             <h1 className="text-5xl text-[#fff] pt-10  leading-[60px] font-medium tracking-[2px] animate__animated animate__zoomInDown">NazDev <span className="text-[blueviolet] font-semibold">Sprint</span></h1>
@@ -67,12 +67,12 @@ export default function Intensivs() {
                    <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/sprints/tailwind">Подробнее</Link></button>
                     </div>   
      {/* Six */}
-              <div className="w-[30%] h-[45%] sprintItem rounded-[15px] transition transform hover:scale-[1.06]  mobileBM sprintBlock  sprintBlockItem flex justify-center items-center flex-col">
-            <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold">React+Vite<br/>Tailwind</h3>
-              <p className="text-[#fff] pt-4 px-7">Sprint по 3 технологиям вместе </p>
-              <span className='pt-7 text-[yellow] text-3xl tracking-[3px] '>1599руб</span>
-              <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/sprints/tailwind-react-masterclass">Подробнее</Link></button>
-          </div>
+              <div className="w-[30%] h-[45%] sprintItem rounded-[15px] transition transform hover:scale-[1.06]  mobileBM sprintBlock    sprintBlockItem flex justify-center items-center flex-col">
+               <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold">React+Vite<br/>Tailwind</h3>
+                 <p className="text-[#fff] pt-4 px-7">Sprint по 3 технологиям вместе </p>
+                 <span className='pt-7 text-[yellow] text-3xl tracking-[3px] '>1599руб</span>
+                 <button className="btn mt-10 transition hover:scale-[1.10]"><Link href="/sprints/tailwind-react-masterclass">Подробнее</Link></button>
+              </div>
                     
                    {/*  <div className="w-[25%] h-[30%] sprintItem rounded-[15px] transition transform hover:scale-[1.06]   sprintBlock"></div> */}
                    {/*  <div className="w-[25%] h-[30%] sprintItem rounded-[15px] transition transform hover:scale-[1.06]   sprintBlock"></div> */}

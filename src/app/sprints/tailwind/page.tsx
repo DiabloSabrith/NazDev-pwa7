@@ -5,8 +5,8 @@ import "./page.scss"
 export default function Intensivs() {
     return(
         <div className="w-340 h-200 mx-auto containerSprint  ">
-        <header className="w-[95%] headerSprint h-12  bg-[#111]  mx-auto  rounded-full flex items-center  justify-between mt-4 mb-4">
-              <h1 className="text-3xl tracking-[2px] font-semibold ml-10 text-[blueviolet] h1 ">NazDev </h1>
+        <header className="w-[95%] headerSprint h-12  bg-[#111]  mx-auto  rounded-[5px] flex items-center  justify-between mt-4 mb-4">
+              <h1 className="text-3xl tracking-[2px] font-semibold ml-10 text-[blueviolet] h1 ">NazDev    <span className="text-[#ffdc22] text-[22px] ">Prime</span></h1>
                 <ul className="flex gap-[20px] mr-[4vw] text-[#fff] tracking-[1px]">
                  <li className="transition hover:text-[blueviolet]" ><Link href="/">Главная</Link></li>
                  <li className="transition hover:text-[blueviolet]"><Link href='/intensivs'>Интенсивы</Link></li>
@@ -23,7 +23,7 @@ export default function Intensivs() {
             <section className=' w-[45%] h-[90%] bg-amber-400  flex flex-col  sprintBlock items-center  relative oneSection'>
 
                 <h3 className='text-[#fff] font-bold text-5xl pt-30 tracking-[4px]'>Tailwind</h3>
-                <p className='text-[#fff]  px-[60px] text-[18px] pt-15 leading-8'>
+                <p className='text-[#fff]  px-[60px] text-[18px] pt-15 leading-8 text-left'>
                   
                 Tailwind CSS: Создавайте современные и стильные веб-интерфейсы быстрее! Освойте популярный CSS-фреймворк и упростите свою разработку!
                 В рамках курса мы разработаем полноценный веб-сайт с использованием Tailwind CSS. В процессе мы не только освоим практические навыки, но и критически оценим преимущества и недостатки этой технологии, чтобы вы могли принимать обоснованные решения о ее применении в своих проектах.
@@ -34,8 +34,8 @@ export default function Intensivs() {
 
             </section>
 
-            <section className=' w-[45%] h-[90%]  flex items-center justify-center  sprintBlock twoSection'>
-
+            <section className=' w-[45%] h-[90%]  flex flex-col items-center justify-center  sprintBlock twoSection'>
+            <h2 className='my-10 text-2xl text-[blueviolet] font-semibold'>Oсталось мест : <span className='text-[yellow]'>2/10</span></h2>
             <div className="w-[70%] h-[65%] sprintItem rounded-[15px] transition transform hover:scale-[1.06]   sprintBlock  item sprintBlockItem flex justify-center items-center flex-col">
                  <h3 className="text-[#fff] text-4xl tracking-[2px] font-semibold ">Tailwind</h3>
                    <p className="text-[#fff] pt-4 px-7">Создание сайта портфолио без применения библиотек</p>
