@@ -1,0 +1,241 @@
+@media (min-width:320px) and (max-width:575px){
+    .container{
+    width: 100%;
+    height: auto;
+    .circles{
+      display: none;
+    }
+    .brand-item {
+      width: 180px;
+      flex-shrink: 0;
+      text-align: center;
+      margin: 0 10px; /* Adjust spacing */
+      margin-bottom: 20px;
+      border-radius: 5px; /* Optional border radius */
+      p{
+        color: #fff;
+        font-weight: 600;
+    
+        font-size: 20px;
+        color: rgb(138, 43, 226,0.7);
+      }
+     }
+    h1{
+      font-size: 10vw;
+      line-height:12vw;
+    }
+    }
+    .footer{
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 10px;
+      .footerItemOne{
+        display: none;
+      }
+      .footerItem{
+        margin-top: 80px;
+        height: auto;
+        width: 90%;
+        p{
+          font-size: 4vw;
+          line-height: 7vw;
+        }
+      }
+    }
+    .header{ 
+      margin-top: 20px;   
+      width: 100%;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+      ul{
+        gap: 2vw;
+      }
+    li{
+      font-size: 3vw;
+    }
+    display: none;
+    }
+    .logoTitle{
+      display: none;
+    }
+    p{
+      padding-top: 10px;
+      font-size: 4vw;
+      padding: 0 20px;
+      line-height: 7vw;
+    }
+   .infoBlock{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+   }
+   .infoItem{
+    width: 80%;
+    height: 30%;
+    h3{
+      font-size: 6vw;
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+    .btn{
+      margin-top: 30px;
+      padding: 5px 25px;
+    }
+     }
+     .advantagesBlock{
+    width: 100%;
+    height: auto;
+    
+    margin-top: 10px;
+     .advantagesBlockOne{
+     h2{
+      display: none ;
+     }
+      }
+    .advantagesBlockTwo{
+      width: 100%;
+      flex-direction: column;
+      .mainItem{
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+          padding-bottom: 0;
+          margin-left: 20px;
+        }
+      }
+     }
+    }
+   }
+
+   @media (min-width:575px) and (max-width:775px){
+    .container{
+      main{
+        background-color:transparent;
+          height: auto;
+      }
+      width: 100%;
+      height: auto;
+      .circles{
+        display: none;
+      }
+      .brand-item {
+        width: 180px;
+        flex-shrink: 0;
+        text-align: center;
+        margin: 0 10px; /* Adjust spacing */
+        margin-bottom: 20px;
+        border-radius: 5px; /* Optional border radius */
+        p{
+          color: #fff;
+          font-weight: 600;
+          font-size:20px;
+          color: rgb(138, 43, 226,0.7);
+        }
+       }
+      h1{
+        font-size:8vw;
+        line-height:9vw;
+      }
+      }
+      .footer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 10px;
+        .footerItemOne{
+          display: none;
+        }
+        .footerItem{
+          margin-top: 80px;
+          height: auto;
+          width: 100%;
+          p{
+            font-size: 4vw;
+            line-height: 7vw;
+          }
+        }
+      }
+      .header{ 
+        margin-top: 20px;   
+        width: 100%;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        ul{
+          gap: 2vw;
+        }
+      li{
+        font-size: 3vw;
+      }
+      display: none;
+      }
+      .logoTitle{
+        display: none;
+      }
+      p{
+        padding-top: 10px;
+        font-size: 4vw;
+        padding: 0 20px;
+        line-height: 7vw;
+      }
+     .infoBlock{
+      width: 95%;
+      height: 900px;
+      margin-top: 0;
+      background-color:transparent;
+      display: flex;
+      flex-direction: column;
+     }
+     .infoItem{
+      width: 95%;
+      height: 45%;
+      h3{
+        font-size: 6vw;
+        padding-top: 10px;
+        padding-bottom: 0;
+      }
+      .btn{
+        margin-top: 30px;
+        padding: 10px 35px;
+      }
+       }
+       .advantagesBlock{
+      width: 100%;
+      height: auto;
+      
+      margin-top: 10px;
+       .advantagesBlockOne{
+       h2{
+        display: none ;
+       }
+        }
+      .advantagesBlockTwo{
+        width: 95%;
+        height: 400px;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px auto;
+        .mainItem{
+          width: 95%;
+          height: 45%;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-between;
+          img{
+            padding-bottom: 0;
+            margin-left: 25px;
+          }
+        }
+       }
+      }
+   }

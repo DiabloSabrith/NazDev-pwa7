@@ -4,7 +4,7 @@
 }
 .btn{
     margin-top: 5vw;
-   left:20px;
+    left:20px;
     width: 30%;
     background-image: linear-gradient(
      to right,
@@ -16,6 +16,7 @@
 border: none;
 color: #fff;
 box-shadow: 0 10px 25px 0 rgba(49, 196, 190, 0.75);
+height: 40px;
 }
 .a{
     padding-top: 10px;
@@ -49,7 +50,6 @@ box-shadow: 0 10px 25px 0 rgba(49, 196, 190, 0.75);
      letter-spacing: 1px;
 }
  .text{
-
     color: #fff;
     text-align: center;
     padding-top: 280px;
@@ -61,5 +61,15 @@ box-shadow: 0 10px 25px 0 rgba(49, 196, 190, 0.75);
 @media(min-width:320px) and (max-width:575px){
     .drawer{
         display: block;
+    }
+}
+@media(min-width:575px) and (max-width:775px){
+    .drawer{
+        display: block;
+        
+    }
+    .btn{
+        width: 20%;
+        height: 50px;
     }
 }

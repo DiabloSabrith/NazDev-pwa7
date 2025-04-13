@@ -1,29 +1,22 @@
 'use client'
-
 import Image from "next/image";
 import Link from "next/link"
 import 'animate.css';
-import Drawer from "./components/drawer/drawer.js"
+import Drawer from "../../components/drawer/drawer.js"
+import MenuHeader from "../../components/mainheader/mainheader.js"
+import Circles from "../../components/circles/circles.js"
+import "./page.scss"
+
 export default function Home() {
   return (
 <div className="  container w-340 h-500 mx-auto  flex  flex-col area">
-    <header className="w-[95%]  h-12  bg-[#111]   mx-auto  rounded-[5px] flex items-center  justify-between mt-4 mb-4 header">
-          <h1 className="text-3xl tracking-[2px] font-semibold ml-10 text-[blueviolet] logoTitle">NazDev <span className="text-[#ffdc22] text-[22px] ">Prime</span> </h1>
-            <ul className="flex gap-[20px] mr-[4vw] text-[#fff] tracking-[1px]">
-             <li className="transition hover:text-[blueviolet] "><Link href='/sprints'>Sprint</Link></li>
-             <li className="transition hover:text-[blueviolet]"><Link href='/intensivs'>Интенсивы</Link></li>
-             <li className="transition hover:text-[blueviolet]"><Link href='/author'>Об авторе</Link></li>
-             <li className="transition hover:text-[blueviolet]"><Link href="/support"> Поддержка</Link></li>
-             <li className="transition hover:text-[blueviolet]"><Link href="https://naz-dev-pwa-6.vercel.app/">Бесплатные курсы</Link></li>
-           
-          </ul>
-    </header>
+    <MenuHeader/>
     <Drawer /> 
 
     <main className="w-[95%] h-510  mx-auto flex flex-col items-center text-center ">
     {/* Надо обернуть в section */}
-           <h1 className="text-5xl text-[#fff] pt-10  leading-[60px] animate__animated animate__flipInX">Стань лучшим разработчиком<br/> <span className="text-[blueviolet] font-semibold">c NazDev</span></h1>
-           <p className=" leading-[35px] text-[#fff] text-[20px] pt-3 animate__animated animate__flipInX px-90">Этот проект разработан семнадцатилетним подростком, стремящимся доказать, что программирование — это не удел избранных, а возможность, доступная каждому</p>
+           <h1 className="text-5xl text-[#fff] pt-10  leading-[60px] animate__animated animate__zoomIn">Стань лучшим разработчиком<br/> <span className="text-[blueviolet] font-semibold">c NazDev</span></h1>
+           <p className=" leading-[35px] text-[#fff] text-[20px] pt-3 animate__animated animate__zoomIn  px-90">Этот проект разработан семнадцатилетним подростком, стремящимся доказать, что программирование — это не удел избранных, а возможность, доступная каждому</p>
         
           {/* Second section  */}   
           <section className="w-[85%] h-30  flex items-center mt-10">
@@ -191,19 +184,7 @@ export default function Home() {
 
             </section>
     </main>
-    
-    <ul className="circles">
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-     </ul>
+    <Circles/>
 </div>
     )
 }
