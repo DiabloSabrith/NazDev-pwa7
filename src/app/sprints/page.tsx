@@ -1,6 +1,5 @@
 'use client';
 import 'animate.css';
-import Link from "next/link";
 import Drawer from '../../../components/drawer/drawer';
 import "./sprints.page.scss";
 import Circles from "../../../components/circles/circles.js";
