@@ -1,10 +1,9 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script"
 import "./globals.scss";
-
-
-
+import ClientCachStrategi from '../../components/sw_client_strategi/sw_strategi.tsx';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
+  
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -62,6 +62,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+       <ClientCachStrategi/>
         {children}
        {/*  <p className="text-center text-[#fff] pb-30 text-2xl tracking-[2px] font-semibold">NazDev corporation</p> */}
       </body>
