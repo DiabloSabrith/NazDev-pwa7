@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image"
-import Drawer from '../../../components/drawer/drawer';
-import AuthorHeader from '../../../components/authorHeader/authorHeader.js';
+import Drawer from '../components/drawer/drawer';
+import AuthorHeader from '../components/authorHeader/authorHeader.js';
 import "./page.scss"
 export default function Intensivs() {
     return(

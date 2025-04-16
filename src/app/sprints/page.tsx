@@ -1,9 +1,9 @@
 'use client';
 import 'animate.css';
-import Drawer from '../../../components/drawer/drawer';
+import Drawer from '../components/drawer/drawer';
 import "./sprints.page.scss";
-import Circles from "../../../components/circles/circles.js";
-import SprintHeader from "../../../components/sprintHeader/sprintHeader.js";
+import Circles from "../components/circles/circles.js";
+import SprintHeader from "../components/sprintHeader/sprintHeader.js";
 import SprintCard from "../../../Card/sprintCard/sprintCard.js";
 import ClientData from "../../../clientData/sprintdata/sprintdata.js";
 

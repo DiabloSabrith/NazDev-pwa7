@@ -1,8 +1,8 @@
 'use client';
 import 'animate.css';
-import Drawer from '../../../components/drawer/drawer';
-import Circles from "../../../components/circles/circles.js";
-import IntensivHeader from "../../../components/intensivHeader/intensivHeader.js";
+import Drawer from '../components/drawer/drawer';
+import Circles from "../components/circles/circles.js";
+import IntensivHeader from "../components/intensivHeader/intensivHeader.js";
 import IntensivCard from "../../../Card/intensivCard/intensivCard.js";
 import IntensivData from "../../../clientData/intensivdata/intensivdata.js";
 

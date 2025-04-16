@@ -2,9 +2,9 @@
 import 'animate.css';
 import Link from "next/link"
 import "./page.scss"
-import Drawer from '../../../components/drawer/drawer';
-import Circles from "../../../components/circles/circles.js"
-import SupportHeader from "../../../components/supportHeader/supportHeader.js"
+import Drawer from '../components/drawer/drawer';
+import Circles from "../components/circles/circles.js"
+import SupportHeader from "../components/supportHeader/supportHeader.js"
 export default function Intensivs() {
     return(
         <div className=" w-340 h-500 mx-auto containerSprint ">

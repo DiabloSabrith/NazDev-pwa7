@@ -2,9 +2,9 @@
 import Image from "next/image";
 import Link from "next/link"
 import 'animate.css';
-import Drawer from "../../components/drawer/drawer.js"
-import MenuHeader from "../../components/mainheader/mainheader.js"
-import Circles from "../../components/circles/circles.js"
+import Drawer from "./components/drawer/drawer.js"
+import MenuHeader from "./components/mainheader/mainheader.js"
+import Circles from "./components/circles/circles.js"
 import "./page.scss"
 
 export default function Home() {
